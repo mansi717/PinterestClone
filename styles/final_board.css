@@ -19,7 +19,7 @@ width: 60px;
 height: 60px;
 position: relative;
 top: 10%;
-left: 90%;
+left: 92%;
 
 transition-duration: 0.3s;
 }
@@ -38,7 +38,7 @@ transition-duration: 0.5s;
 .pin_container {
 margin: 0;
 padding: 0;
-width: 80vw;
+width: 90vw;
 /* position: absolute;
 left: 50%;
 transform: translateX(-50%); */
