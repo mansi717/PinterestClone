@@ -1,3 +1,4 @@
+
 const add_pin_modal = document.querySelector('.add_pin_modal')
 
 document.querySelector('.add_pin').addEventListener('click',() =>{
@@ -60,6 +61,22 @@ document.querySelector('.save_pin').addEventListener('click',() =>{
         img_blob: pin_image_blob,
         pin_size: document.querySelector('#pin_size').value
     }
+
+    /*var uploadTask = firebase.storage().ref(pin_image_blob).put(files[0]);
+    uploadTask.on('state_changed', function(error){
+        alert('error in saving the image');
+    },
+    function(){
+        uploadTask.snapshot.ref.getDownloadURL().then(function(url){
+            var ImgUrl = url;
+        
+            firebase.database().ref(pin_image_blob).set({
+                Link: ImgUrl
+            });
+            alert('image added successfully');
+        });
+    });*/
+
     create_pin(users_data);
     reset_modal();
 });
